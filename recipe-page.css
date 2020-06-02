@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background: url('images/bakery.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+/* NavBar */
+.my-navbar {
+  background-color: #c9a66b;
+}
+#recipe-search-button {
+  background-color: #af4425;
+  border: 1px #af4425 solid;
+  color: #fafafa;
+  border-radius: 20px;
+  width: 100px;
+}
+#recipe-search-button:hover {
+  background-color: #662e1c;
+  border: 1px #662e1c solid;
+}
+.logo-name {
+  font-family: "Pacifico", cursive;
+}
+
+/* Main block/div */
+.main {
+  max-width: 80%;
+  height: auto;
+  margin: 5% auto;
+}
+
+/* Info + Instructions */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ingredients */
+.info-left {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.info {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.9em;
+  margin-top: 2%;
+  padding: 3% 0;
+}
+
+span {
+  color: #2e2e2c;
+}
+i {
+  padding: 0 5%;
+  color: #af4425;
+}
+.time,
+.yield,
+.ingredients-header {
+  font-size: 1em;
+  width: 100%;
+  font-family: "Merriweather", serif;
+  background-color: rgba(214, 208, 191, 0.7);
+}
+.ing-list {
+  padding-top: 10%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+.ing-list li {
+  background-color: rgba(214, 208, 191, 0.7);
+}
+
+/* Instructions: h1 + Steps */
+.instructions {
+  background-color: rgba(245, 243, 237, 0.6);
+  box-shadow: 0 0 3px rgba(245, 243, 237, 0.8);
+  width: 65%;
+  height: auto;
+  margin-left: 1%;
+}
+
+.recipe-name {
+  font-family: "Merriweather", serif;
+  font-size: 3em;
+  font-weight: 800;
+  text-align: center;
+  color: #662e1c;
+  text-transform: uppercase;
+  padding-top: 3%;
+}
+
+.steps {
+  padding: 3% 3%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: justify;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    margin: auto;
+  }
+  .info-left {
+    width: 100%;
+    margin: 0 auto 2%;
+  }
+  .instructions {
+    width: 100%;
+    margin: 0;
+  }
+  .recipe-name {
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+}
+@media (max-width: 400px) {
+  .info {
+    flex-direction: column;
+    text-align: center;
+    padding: 3% 0;
+  }
+  .yield {
+    margin-top: 2%;
+  }
+  .recipe-name {
+    font-size: 1.65em;
+    font-weight: 600;
+    text-transform: capitalize;
+    overflow-wrap: break-word;
+  }
+}
