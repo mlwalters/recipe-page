@@ -4,4 +4,4 @@
 Used BootStrap for the menu and the ingredients list but the rest were made using pure CSS, this project was made to practice styling with pure CSS and with Bootstrap, as well as to get better with making pages responsive.
 
 Credits:
-Recipe from <a href="https://www.youtube.com/watch?v=XNZfcmZk0dk">The Stay At Home Chef</a>
+Recipe from The Stay At Home Chef on YouTube
